@@ -45,7 +45,7 @@ The pre-trained facial landmark detector in the Dlib package is used to find and
 We used Python and OpenCV to build sleepiness detection for this method. The pre-trained facial landmark detector in the Dlib package is used to find and locate facial landmarks. It comprises of two shape prediction models that locate 68 and 5 landmark points within a facial image, respectively, using data from the i-Bug 300-W dataset. 68 face landmarks have been employed in this method. We employ the pose estimation issue to identify the student's head pose. In computer vision lingo, the pose estimation problem described is sometimes referred to as the Perspective-n-Point problem, or PNP. The objective of this challenge is to determine an item's posture given a calibrated camera and the locations of n 3D points on the object and the corresponding 2D projections in the image.
 
 ## 3 FLOW OF SYSTEM
-![Flow diagram](images/image.jpg)
+![Flow diagram](images/flow-diagram.png)
 1. In this we first begin by identifying the face of the user from the video.
 2. We then extract the coordinates of the eye from the face. 3. After getting the coordinates of the eye we then calculate the Eye Aspect Ratio.
 4. We then calculate the blinking rate of the eyes.
@@ -54,35 +54,45 @@ We used Python and OpenCV to build sleepiness detection for this method. The pre
 7. We also check if the student is looking at the screen or not.
 8. If the student is not looking at the screen then we will send an alert.
 
-## 4.RESULTS AND DISCUSSION 
+## 4. RESULTS AND DISCUSSION 
 ### 4.1 USER INTERFACE:
 * Figure 2 - Home Page
-![Flow diagram](images/image.jpg)
+![Flow diagram](images/home-page.png)
 * Figure 3 - Online Lecture
-![Flow diagram](images/image.jpg)
+![Flow diagram](images/OnlineLecture.png)
 * Figure 4 - Drowsiness Detection in Lecture
-![Flow diagram](images/image.jpg)
+![Flow diagram](images/DrowsinessDetectionInLecture.png)
 * Figure 5 - Online Exam
-![Flow diagram](images/image.jpg)
+![Flow diagram](images/OnlineExam.png)
 * Figure 6 - File Upload
-![Flow diagram](images/image.jpg)
+![Flow diagram](images/FileUpload.png)
 * Figure 7 - Proctoring System
-![Flow diagram](images/image.jpg)
-* Figure 8 - Email notification for Malicious Activities
-![Flow diagram](images/image.jpg)
+![Flow diagram](images/ProctoringSystem.png)
+* Figure 8 - Email Notification for Malicious Activities
+![Flow diagram](images/EmailNotificationForMaliciousActivities.png)
 
 ## 5.TESTING:
-Testing is the practise of assessing software to find discrepancies between input and desired results. Testing evaluates the product's quality. Software testing is a process of validation and verification. It is a procedure for testing fully integrated software. This test's objective is to assess how well the system complies with the given requirements. White box testing is frequently used for verification whereas black box testing is frequently utilised for validation. 1.Black-box testing-Black box testing is a testing method that ignores the internal workings of the system and concentrates on the results produced in response to any input and system execution. Additionally known as functional testing.
-2. White-box Testing -White box testing is a testing method that considers a system's internal workings. Glass box testing and structural testing are other names for it.
+![Flow diagram](images/ideal-condition.png)
+
+![Flow diagram](images/person-with-specs.png)
+
+![Flow diagram](images/poor-lighting-condition.png)
+
+![Flow diagram](images/sunlight-from-behind.png)
+
+Testing is the practice of assessing software to find discrepancies between input and desired results. Testing evaluates the product's quality. Software testing is a process of validation and verification. It is a procedure for testing fully integrated software. This test's objective is to assess how well the system complies with the given requirements. White box testing is frequently used for verification whereas black box testing is frequently utilised for validation. 1. Black-box testing- Black box testing is a testing method that ignores the internal workings of the system and concentrates on the results produced in response to any input and system execution additionally known as functional testing.
+2. White-box Testing -White-box testing is a testing method that considers a system's internal workings. Glass box testing and structural testing are other names for it.
 
 ### 5.1 TEST CASES:
 
 ## 6. RESULT AND DISCUSSION
 The accuracy of the system was calculated by carrying out various tests under various lighting conditions and various facial conditions such as spectacles and and without spectacles. 
+
 The accuracy for the two systems is as follows:
-![Flow diagram](images/image.jpg)
-Students had attended lectures and given exams under ideal lighting conditions so the overall accuracy comes down to :
-![Flow diagram](images/image.jpg)
+![Flow diagram](images/Accuracy.png)
+
+Students had attended lectures and given exams under ideal lighting conditions so the overall accuracy comes down to:
+![Flow diagram](images/OverallAccuracy.png)
 
 ## 7. Experimental Setup
 
@@ -90,7 +100,7 @@ The 300-W is a face dataset made up of 300 photos taken inside and outdoors. It 
 
 ## 8. Conclusion and Future Scope
 
-Student attention detection fully complies with the system's goals and specifications. It assessed whether or not the learner was paying attention to the lecture using real-time video of the student. This made it easier for the teacher to keep an eye on whether or not the pupils in the online class were paying attention. Additionally, thanks to the proctoring system, professors can now tell whether a student is giving the exam honestly or engaging in any unethical behavior. Additional video chatting and meeting software, including Google Meet, Zoom, MS Teams, etc., can be coupled with this project. It can be used to simultaneously identify these characteristics for each participant and provide the meeting's host with a summary. The system's precision can also be increased. It can also be integrated with the colleges' ERP systems to collect attendance automatically and save the data, which will free up teachers' time.
+Student attention detection fully complies with the system's goals and specifications. It assessed whether or not the learner was paying attention to the lecture using real-time video of the student. This made it easier for the teacher to keep an eye on whether or not the pupils in the online class were paying attention. Additionally, thanks to the proctoring system, professors can now tell whether a student is taking the exam honestly or engaging in any unethical behavior. Additional video chatting and meeting software, including Google Meet, Zoom, MS Teams, etc., can be coupled with this project. It can be used to simultaneously identify these characteristics for each participant and provide the meeting's host with a summary. The system's precision can also be increased. It can also be integrated with the colleges' ERP systems to collect attendance automatically and save the data, which will free up teachers' time.
 
 ## 9. References
 
