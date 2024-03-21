@@ -76,6 +76,8 @@ def app():
 
         faces = faceDetector(grayImage, 0)
 
+        #if (len(faces) == 0):
+           # cv2.putText(frame, "No Face Detected", (10, 30), cv2.FONT_HERSHEY_SIMPLEX, 0.7, (0, 0, 255), 2)
         for face in faces:
             
             faceLandmarks = landmarkFinder(grayImage, face)
